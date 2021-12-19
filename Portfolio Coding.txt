@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Times New Roman", Times, serif}
+.w3-quarter img{opacity: 0.8; cursor: pointer}
+.w3-quarter img:hover{opacity: 1}
+.w3-half img{opacity: 0.8; cursor: pointer}
+.w3-half img:hover{opacity: 1}
+.bgimg {
+  background-position: center;
+  background-image: url("header.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+img {
+  opacity: 0.8;
+}
+</style>
+<body class="w3-content bgimg" style="max-width:1600px">
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <br><br><br><img src="logo.png" style="width: 50%" class="w3-image img" >
+  <h3 class="w3-padding-32 w3-center" ><b>Nurshafa Atirah<br>Binti Zulriyamin</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:300px">
+
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  <div class="w3-padding-large" id="main">
+
+  <header class="w3-container w3-center" id="home"><br><br>
+    <img src="UiTM.png" alt="Logo" class="w3-image img" style="width:30%">
+    <h2 class="w3-jumbo"><span class="w3-hide-small">IMD</span>311</h2>
+    <h3><b>INTRODUCTION TO WEB MANAGEMENT AND DESIGN</b></h3>
+    <h5 class="w3-content w3-justify" style="margin-left:300px"><b>Name  :</b> Nurshafa Atirah Binti Zulriyamin (2019271768)</h5>
+    <h5 class="w3-content w3-justify" style="margin-left:300px"><b>Class  :</b> KIM1105C</h5>
+  </div>
+  </header>
+
+  <div class="w3-row">
+
+    <div class="w3-row">
+      <div class="w3-half" >
+        <img src="My Quote2.png" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="My Quote.png" alt="My Words of Encouragement" style="width: 100%"><br><br>
+      </div>
+    
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="Me.jpeg" alt="Me" class="w3-image w3-padding-32" width="400" height="450">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4><b>Nurshafa Atira Binti Zulriyamin</b></h4>
+      <ul style="list-style-type:square"><p><li>Born on 7th April 2001 (20 years old)</li>
+        <li>Hobbies:</li>
+        <ul>
+            <li>Taking Pictures</li>
+            <li>Collecting Stuff</li>
+            <li>Singing</li>
+            <li>Go for a trip</li>
+        </ul>
+      <li>Mobile No: 011-39557206</li>
+    </ul>
+      <hr class="w3-opacity">
+      <div class="w3-container w3-grey w3-center w3-text-white w3-padding-32" id="about">
+      <h4><b>My Big Family</b></h4>
+      <h6><i>Where life begins and love never ends</i></h6>
+      <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-center" >
+          <img src="Family.jpeg"style="width:60%">
+          <div class="w3-content w3-justify" style="max-width:600px">
+          <h5><b>Father &nbsp;&ensp;: </b>Zulriyamin Bin Md Zain</h5>
+      <ul style="list-style-type:square"><p><li>Born on 24th June 1975 (46 years old)</li>
+        <li>Hobbies:</li>
+        <ul>
+            <li>Fishing</li>
+            <li>Online Shopping</li>
+            <li>Watching Football Match</li>
+        </ul>
+    </ul>
+    <h5><b>Mother &ensp;: </b>Zuriana Binti Man @ Osman</h5>
+      <ul style="list-style-type:square"><p><li>Born on 6th August 1980 (41 years old)</li>
+        <li>Hobbies:</li>
+        <ul>
+            <li>Watching Football Match</li>
+            <li>Cooking</li>
+        </ul>
+    </ul>
+    </div>
+        </div>
+        <div class="w3-half">
+          <img src="Sister.jpeg"style="width:100%">
+          <div class="w3-content w3-justify" style="max-width:600px">
+          <h6><b>Younger Sister: </b><br>Siti Nursyafiqah Binti Zulriyamin</h6>
+      <ul style="list-style-type:square"><p><li>Born on 16th November 2013 <br>(8 years old)</li>
+        <li>Hobbies:</li>
+        <ul>
+            <li>Playing Games</li>
+            <li>Watching Television</li>
+        </ul>
+    </ul>
+    </div>
+        </div>
+        <div class="w3-half">
+          <img src="Brother.jpeg"style="width:101%">
+          <div class="w3-content w3-justify" style="max-width:600px">
+          <h6><b>Younger Brother: </b><br>Iskandar Bin Zulriyamin</h6>
+      <ul style="list-style-type:square"><p><li>Born on 16th March 2009 <br>(12 years old)</li>
+        <li>Hobbies:</li>
+        <ul>
+            <li>Playing Games</li>
+            <li>Cycling</li>
+            <li>Fishing</li>
+        </ul>
+    </ul>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row">
+    <div class="w3-quarter">
+      <img src="Image2.jpeg" style="width:100%" onclick="onClick(this)">
+      </div>
+
+    <div class="w3-quarter">
+      <img src="Image3.jpeg" style="width:100%" onclick="onClick(this)">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="Image4.jpeg" style="width:100%" onclick="onClick(this)">
+    </div>
+
+    <div class="w3-quarter">
+        <img src="Image5.jpeg" style="width:100%" onclick="onClick(this)">
+      </div>
+
+      <div class="w3-half">
+        <video width="525" height="360" controls>
+        <source src="Video 1.mp4" type="video/mp4">
+      </video>
+      </div>
+
+      <div class="w3-half">
+        <video width="525" height="360" controls>
+          <source src="Video 2.mp4" type="video/mp4">
+        </video>
+      </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-center w3-padding-32 w3-padding-large" style="background-color:#e3e3e9;" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h2 class="w3-center"><b>Connect With Me!</b></h2>
+      <h6 class="w3-center">Click any of these icons.</h6>
+      <a href="https://twitter.com/xraeyay" target="_blank">
+        <img class="w3-center" src="Twitter.png" alt="Twitter"
+      style="width:100px;height:100px;"></a>
+      <a href="https://www.instagram.com/xraeyay/?hl=en" target="_blank">
+        <img class="w3-center" src="Instagram.png" alt="Instagram"
+      style="width:100px;height:100px;"></a>
+      <a href="https://m.facebook.com/nurshafa.aira" target="_blank">
+        <img class="w3-center" src="FB.png" alt="Facebook"
+      style="width:100px;height:100px;"></a>
+    </div>
+  </div>
+ 
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
